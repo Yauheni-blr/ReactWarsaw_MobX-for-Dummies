@@ -1,0 +1,97 @@
+<html>
+  <head>
+    <title>EventCard</title>
+    <style>
+      #root {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        top: 30px;
+        bottom: 20px;
+        border: 1px solid #e2e2e2;
+        overflow: scroll;
+        border-radius: 5px;
+        box-shadow: 0px 0px 19px 0px rgba(122,122,122,1);
+      }
+
+      .app {
+        position: absolute;
+        left: 20px;
+        right: 20px;
+        top: 20px;
+        bottom: 20px;
+      }
+
+      .app__event-form {
+        position: absolute;
+        left: 0;
+        right: 65%;
+        top: 0;
+        bottom: 0;
+        border-right: 5px solid #808080;
+        overflow: scroll;
+      }
+
+      .app__event-form textarea {
+        resize: vertical;
+      }
+
+      .app__event-card {
+        position: absolute;
+        left: calc(35% + 20px);
+        right: 0;
+        top: 0;
+        bottom: 0;
+      }
+
+      .app__event-card_box {
+        width: 300px;
+        border-radius: 10px 10px 10px 10px;
+        font-family: monospace;
+        overflow: hidden;
+      }
+      .app__event-card__box-header {
+        background-color: #4a99a0;
+        text-align: center;
+      }
+      .app__event-card__box-header h2 {
+        margin: 0;
+        font-family: cursive;
+        color: #ffffff
+      }
+      .app__event-card__box-body {
+        border-left: 1px solid #4a99a0;
+        border-right: 1px solid #4a99a0;
+        overflow-wrap: break-word;
+      }
+      .app__event-card__box-body h4 {
+        font-weight: 100;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding-left: 5px;
+        padding-right: 5px;
+      }
+      .app__event-card__box-body > :first-child {
+        margin-top: 0;
+        padding-top: 5px;
+      }
+      .app__event-card__box-body > :last-child {
+        margin-bottom: 0;
+        padding-bottom: 5px;
+      }
+      .app__event-card__box-footer {
+        background-color: #4a99a0;
+        text-align: center;
+      }
+      .app__event-card__box-footer h2 {
+        margin: 0;
+        font-family: cursive;
+        color: #ffffff
+      }
+    </style>
+  </head>
+  <body>
+    <div id="root"></div>
+    <script src="/static/bundle.js"></script>
+  </body>
+</html>
